@@ -9,7 +9,7 @@ import {
   Cta,
 } from './containers'
 
-import { Event, Navbar, Service, Testimonial } from './components'
+import { Navbar } from './components'
 
 import './App.css'
 

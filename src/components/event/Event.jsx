@@ -7,7 +7,7 @@ const Event = ({ imgUrl, title, text }) => {
       <div className="gardenia__events-container__img">
         <img
           src={imgUrl}
-          alt="event image"
+          alt="event"
         />
       </div>
       <div className="gardenia__events-container__event-content">
