@@ -1,0 +1,107 @@
+.gardenia__events-container__event {
+  height: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-lightGreen);
+  border-radius: 50px;
+  border: 1px solid var(--color-text);
+  z-index: 999;
+}
+
+.gardenia__events-container__img {
+  width: 100%;
+  height: auto;
+}
+
+.gardenia__events-container__img img {
+  border-top-left-radius: 49px;
+  border-top-right-radius: 49px;
+}
+
+.gardenia__events-container__event-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem;
+}
+
+.gardenia__events-container__event-content h3 {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.gardenia__events-container__event-content p {
+  font-family: var(--font-text);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 84em) {
+  .gardenia__events-container__event {
+    max-width: 304px;
+  }
+  .gardenia__events-container__img img {
+    width: 302px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 65em) {
+  .gardenia__events-container__event {
+    max-width: 222px;
+  }
+  .gardenia__events-container__img img {
+    width: 220px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 65em) {
+  .gardenia__events-container__event {
+    max-width: 242px;
+  }
+  .gardenia__events-container__img img {
+    width: 240px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 48em) {
+  .gardenia__events-container__event-content h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .gardenia__events-container__event-content p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 34em) {
+  .gardenia__events-container__event {
+    max-width: 380px;
+  }
+  .gardenia__events-container__img img {
+    width: 378px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .gardenia__events-container__event {
+    max-width: 280px;
+  }
+  .gardenia__events-container__img img {
+    width: 278px;
+    height: auto;
+  }
+}

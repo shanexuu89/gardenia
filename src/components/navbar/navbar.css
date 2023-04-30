@@ -1,0 +1,161 @@
+.gardenia__navbar {
+  display: flex;
+  position: relative;
+  height: 6rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  border-bottom: 1px solid rgb(38, 49, 59);
+  transition: 0.3s;
+  background: #d3e2da;
+}
+.sticky {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
+.gardenia__navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gardenia__navbar-links_logo {
+  margin-right: 4rem;
+}
+
+.gardenia__navbar-links_logo img {
+  width: 220px;
+  height: auto;
+  cursor: pointer;
+}
+
+.gardenia__navbar-links_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.gardenia__navbar-links_container p,
+.gardenia__navbar-menu_container p {
+  color: var(--color-text);
+  font-family: var(--font-text);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+  cursor: pointer;
+  align-items: center;
+}
+
+.gardenia__navbar-links_container-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.gardenia__navbar-links_container-sign button,
+.gardenia__navbar-links_mobile-sign button {
+  padding: 0.8rem 1.5rem;
+  top: 55px;
+  margin-left: 4rem;
+  color: var(--color-text);
+  background: var(--color-bg-orange);
+  font-family: var(--font-text);
+  font-weight: 300;
+  border-radius: 40px;
+  font-size: 18px;
+  line-height: 25px;
+  border: 1px solid #28313a;
+  outline: none;
+  cursor: pointer;
+}
+
+.gardenia__navbar-links_container-sign button:hover,
+.gardenia__navbar-links_mobile-sign button:hover {
+  background-color: #28313a;
+  color: white;
+  transition: all 0.3s;
+}
+
+.gardenia__navbar-mobile {
+  display: none;
+  position: relative;
+}
+.gardenia__navbar-mobile svg {
+  border: none;
+  cursor: pointer;
+}
+.gardenia__navbar-links_mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 0 0;
+  right: -4rem;
+  top: -1.7rem;
+  gap: 2rem;
+  font-size: 1rem;
+  font-family: var(--font-text);
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 84em) {
+  .gardenia__navbar-links_container-sign button {
+    padding: 0.5rem 1rem;
+    margin-left: 2rem;
+  }
+  .gardenia__navbar-links_container {
+    gap: 2rem;
+  }
+
+  .gardenia__navbar-links_logo {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  .gardenia__navbar-links_container p,
+  .gardenia__navbar-menu_container p {
+    font-size: 16px;
+  }
+  .gardenia__navbar-links_container {
+    gap: 1rem;
+  }
+
+  .gardenia__navbar-links_logo img {
+    width: 150px;
+    height: 30px;
+  }
+  .gardenia__navbar-links_container-sign button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .gardenia__navbar-mobile svg {
+    z-index: 999;
+  }
+
+  .gardenia__navbar-mobile {
+    display: flex;
+  }
+
+  .gardenia__navbar-links_container {
+    display: none;
+    z-index: 1;
+  }
+  .gardenia__navbar-links_mobile-sign button {
+    font-size: 1rem;
+    margin-left: 0;
+
+    height: 3rem;
+    font-weight: 400;
+  }
+}

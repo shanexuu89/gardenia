@@ -1,0 +1,145 @@
+.gardenia__header {
+  display: flex;
+}
+
+.gardenia__header-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-basis: 45%;
+}
+
+.gardenia__header-image img {
+  width: 100%;
+  height: auto;
+}
+
+.gardenia__header-content {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin: 8rem 6rem;
+}
+
+.gardenia__header-content h1 {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 75px;
+}
+
+.gardenia__header-content p {
+  font-family: var(--font-text);
+  color: var(--color-text);
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 1.5rem;
+}
+
+.gardenia__header-content button {
+  width: 180px;
+  height: 65px;
+  color: var(--color-text);
+  background: var(--color-bg-orange);
+  font-family: var(--font-text);
+  font-weight: 300;
+  border-radius: 40px;
+  font-size: 18px;
+  line-height: 25px;
+  border: 1px solid #28313a;
+  outline: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.gardenia__header-content button:hover {
+  background-color: #28313a;
+  color: white;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 84em) {
+  .gardenia__header {
+    max-width: 120rem;
+  }
+  .gardenia__header-image {
+    width: 55%;
+    height: auto;
+  }
+
+  .gardenia__header-content h1 {
+    font-size: 42px;
+    line-height: 58px;
+  }
+  .gardenia__header-content p {
+    font-size: 18px;
+  }
+  .gardenia__header-content button {
+    width: 150px;
+    height: 52px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 75em) {
+  .gardenia__header-content p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .gardenia__header-content button {
+    width: 120px;
+    height: 48px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 65em) {
+  .gardenia__header-content {
+    margin: 5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .gardenia__header-image {
+    flex-basis: 40%;
+  }
+
+  .gardenia__header-content h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .gardenia__header-content p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 1rem;
+  }
+  .gardenia__header-content button {
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
+    margin-top: 1rem;
+  }
+
+  .gardenia__header-content {
+    margin: 5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 34em) {
+  .gardenia__header {
+    flex-direction: column;
+  }
+
+  .gardenia__header-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .gardenia__header-content {
+    margin: 2rem 2rem;
+  }
+}

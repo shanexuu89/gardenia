@@ -1,0 +1,28 @@
+.gardenia__testimonials {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-lightGreen);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  height: 100%;
+}
+
+.gardenia__testimonials-heading {
+  margin-bottom: 3rem;
+}
+
+.gardenia__testimonials-heading h1 {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 48em) {
+  .gardenia__testimonials-heading h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}

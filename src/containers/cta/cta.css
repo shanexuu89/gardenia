@@ -1,0 +1,133 @@
+.gardenia__cta {
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+  background: var(--color-bg-cta);
+  height: 100%;
+}
+
+.gardenia__cta-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+.gardenia__cta-content-form {
+  display: grid;
+  margin-top: 4rem;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.div {
+  display: block;
+}
+
+.gardenia__cta-content-form label {
+  display: block;
+  color: var(--color-text-cta);
+  font-family: var(--font-text);
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 1.5rem;
+}
+
+.gardenia__cta-content-form input,
+.gardenia__cta-content-form select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  color: var(--color-text);
+  border: none;
+  background-color: white;
+  border-radius: 15px;
+  font-family: var(--font-text);
+  font-weight: 200;
+}
+
+.gardenia__cta-content h1 {
+  font-family: var(--font-family);
+  color: white;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: capitalize;
+}
+
+.gardenia__cta-content p {
+  font-family: var(--font-text);
+  color: white;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.gardenia__cta-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gardenia__cta-image img {
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border: 1px solid var(--color-text);
+}
+
+.gardenia__cta-form-button button {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin-top: 2.5rem;
+  color: var(--color-text);
+  background: var(--color-bg-orange);
+  font-family: var(--font-text);
+  font-weight: 300;
+  border-radius: 40px;
+  font-size: 18px;
+  line-height: 25px;
+  border: 1px solid #28313a;
+  outline: none;
+  cursor: pointer;
+}
+
+.gardenia__cta-form-button button:hover {
+  background-color: #28313a;
+  color: white;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 65em) {
+  .gardenia__cta {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .gardenia__cta-content h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .gardenia__cta-content p,
+  .gardenia__cta-content-form input,
+  .gardenia__cta-content-form select,
+  .gardenia__cta-content-form label {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .gardenia__cta-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .gardenia__cta-content-form {
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+  }
+}

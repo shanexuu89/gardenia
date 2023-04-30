@@ -1,0 +1,35 @@
+.gardenia__services {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  background: var(--color-bg-darkGreen);
+}
+
+.gardenia__services-heading {
+  margin-bottom: 3rem;
+}
+
+.gardenia__services-card {
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.gardenia__services-card:hover {
+  transform: perspective(500px) translateZ(50px);
+}
+
+.gardenia__services-heading h1 {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 48em) {
+  .gardenia__services-heading h1 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}

@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: var(--color-bg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.section__padding {
+  padding: 6rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 3.5rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 1s ease-out forwards;
+  animation: slide-bottom 1s ease-out forwards;
+}
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 84em) {
+  .section__padding {
+    padding: 4rem 4rem;
   }
-  to {
-    transform: rotate(360deg);
+  .section__margin {
+    margin: 4rem 4rem;
+  }
+
+  .grid {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 65em) {
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section__padding {
+    padding: 3.5rem 3.5rem;
+  }
+  .section__margin {
+    margin: 3.5rem 3.5rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section__padding {
+    padding: 3rem 3rem;
+  }
+  .section__margin {
+    margin: 3rem 3rem;
+  }
+}
+
+@media screen and (max-width: 34em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section__padding {
+    padding: 2rem 2rem;
+  }
+  .section__margin {
+    margin: 2rem 2rem;
   }
 }
